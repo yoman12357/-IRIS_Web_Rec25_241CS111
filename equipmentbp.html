@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Management</title>
+    <link rel="stylesheet" href="equipmentbp.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Manage Equipment</h2>
+
+        <!-- Form for Adding/Updating Equipment -->
+        <form id="equipmentForm" >
+            <input type="text" id="equipmentName" placeholder="Equipment Name" required>
+            
+            <select id="equipmentCategory" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+                <option value="Badminton">Badminton</option>
+                <option value="Tennis">Tennis</option>
+                <option value="Basketball">Basketball</option>
+            </select>
+
+            <input type="number" id="equipmentQuantity" placeholder="Quantity" required min="1">
+
+            <select id="equipmentAvailability" required>
+                <option value="" disabled selected>Select Availability</option>
+                <option value="Available">Available</option>
+                <option value="Not Available">Not Available</option>
+                <option value="Under Maintenance">Under Maintenance</option>
+            </select>
+            <select id="equipmentCondition" required>
+                <option value="" disabled selected>Select Condition</option>
+                <option value="Nice">Nice</option>
+                <option value="Poor">Poor</option>
+                <option value="Average">Average</option>
+            </select>
+
+
+            <textarea id="equipmentNotes" placeholder="Additional Notes (optional)"></textarea>
+
+            <button type="submit">Add/Update Equipment</button>
+        </form>
+
+        <!-- List of Equipment -->
+        <div class="equipment-list">
+            <h3>Available Equipment</h3>
+            <ul id="equipmentItems"></ul>
+            
+    
+            <!-- Links to Request Page and Admin Panel -->
+            <div class="navigation-links">
+                <a href="request-equipment.html" class="request-btn">Request Equipment</a>
+                <a href="admin-request.html" class="admin-btn">Manage Requests (Admin)</a>
+        </div>
+    </div>
+    <form action="infrastructurebp.html" method="get">
+        <button class="finalbutton-">Continue</button>
+    </form>
+
+    <script src="equipmentbp.js"></script>
+</body>
+</html>

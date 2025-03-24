@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("download.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 100px;
+    padding-right: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    
+
+.container h2 {
+    margin-bottom: 20px;
+    
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.irisimg {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0px;
+    /* Centers the image horizontally */
+    padding-left: 17px;
+}

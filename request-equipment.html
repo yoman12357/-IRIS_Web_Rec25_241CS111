@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Equipment</title>
+    <link rel="stylesheet" href="request-equipment.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Request Equipment</h2>
+
+        <form id="requestForm">
+            <select id="equipmentRequest" required>
+                <option value="" disabled selected>Select Equipment</option>
+                <option value="Cricket Bat">Cricket Bat</option>
+                <option value="Football">Football</option>
+                <option value="Badminton Racket">Badminton Racket</option>
+                <option value="Tennis Racket">Tennis Racket</option>
+            </select>
+
+            <input type="number" id="requestQuantity" placeholder="Quantity" required min="1">
+            <input type="text" id="requestDuration" placeholder="Duration (e.g., 2 hours)" required>
+
+            <button type="submit">Submit Request</button>
+        </form>
+
+        <h3>Your Requests</h3>
+        <ul id="studentRequests"></ul>
+
+        <div class="navigation-links">
+            <a href="admin-request.html" class="admin-btn">Admin Panel</a>
+        </div>
+    </div>
+
+    <script src="request-equipment.js"></script>
+</body>
+</html>

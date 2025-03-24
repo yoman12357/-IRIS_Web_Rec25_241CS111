@@ -1,0 +1,124 @@
+/* Resetting default margins and paddings */
+body, h2, ul, li, a, input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h2 {
+    color: #2F3E46;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+.booking-form select,
+.booking-form input,
+.booking-form textarea,
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Focus Effect */
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: #28a745;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}
+
+/* Textarea Styling */
+.booking-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styling */
+.booking-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+}
+
+.booking-form button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+.navigation-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.admin-btn {
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+    background-color: #c82333;
+}
+.status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.approved {
+    color: green;
+}
+
+.status.rejected {
+    color: red;
+}
+
+.status.cancellation-requested {
+    color: blue;
+}

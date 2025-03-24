@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-right: 100px;
+}
+
+/* Input Fields and Dropdowns */
+input, select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background-color: #5A4FCF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4838B2;
+}
+
+/* Equipment List */
+.equipment-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.equipment-list li {
+    padding: 10px;
+    background: #E6E6E6;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipment-list button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#equipmentCondition{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.finalbutton{
+    background-color: #5A4FCF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.navigation-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.request-btn, .admin-btn {
+    padding: 12px 15px;
+    background-color: #5A4FCF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.request-btn:hover {
+    background-color: #4a3bb8;
+}
+
+.admin-btn {
+    background-color: #dc3545;
+}
+
+.admin-btn:hover {
+    background-color: #c82333;
+}

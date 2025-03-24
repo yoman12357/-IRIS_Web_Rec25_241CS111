@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.approve {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.reject {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: #5A4FCF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #4838B2;
+}
+.status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.status.pending {
+    color: orange;
+}
+
+.status.approved {
+    color: green;
+}
+
+.status.rejected {
+    color: red;
+}
+
+.status.cancellation-requested {
+    color: blue;
+}
